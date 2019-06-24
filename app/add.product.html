@@ -1,0 +1,33 @@
+<h2>Add Product here</h2>
+<table border="2">
+    <!-- <tr>
+    <th colspan="2"> Add Product here</th>
+    </tr> -->
+    <tr>
+        <th>Product Id</th>
+        <td><input type="text" [(ngModel)]="prod.id"/></td>
+    </tr>
+     <tr>
+        <th>Product name</th>
+        <td><input type="text" [(ngModel)]="prod.name"/></td>
+    </tr>
+     <tr>
+        <th>Product Price</th>
+        <td><input type="text" [(ngModel)]="prod.price"/></td>
+    </tr>
+     <tr>
+        <th>Product Description</th>
+        <td><input type="text" [(ngModel)]="prod.des"/></td>
+    </tr>
+    <tr>
+        <th>Inventory Id</th>
+        <td><input type="text" [(ngModel)]="prod.inid"/></td>
+    </tr>
+    <tr>
+        <th>Inventory Name</th>
+        <td><input type="text" [(ngModel)]="prod.inname"/></td>
+    </tr>
+    <tr>
+        <td align='center' colspan="2"><input type="button" value="Add Product" (click)="addProduct()"/></td>
+    </tr>
+</table>

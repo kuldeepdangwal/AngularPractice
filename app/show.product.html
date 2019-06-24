@@ -1,0 +1,24 @@
+<h2>Show all products</h2>
+<table border="2">
+    <tr>
+        <th> Product Id </th>
+        <th> Product Name </th>
+        <th> Product Price </th>
+        <th> Product Description </th>
+        <th> Inventory Id </th>
+        <th> Inventory Name </th>
+        <th> Action </th>
+    </tr>
+
+    <!--<angular directives>-->
+    <tr *ngFor="let pro of prodAll" >
+        <td>{{pro.id}}</td>
+        <td>{{pro.name}}</td>-->
+        <td>{{pro.price}}</td>
+        <td>{{pro.description}}</td>
+        <td>{{pro.inventory.id}}</td>
+        <td>{{pro.inventory.name}}</td>
+        <td><input type="button" value="Delete" (click)="deleteProduct(input)"/></td>
+        <td><input type="button" value="Edit" (click)="editProduct(input)"/></td>
+    </tr>
+</table>
